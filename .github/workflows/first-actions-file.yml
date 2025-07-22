@@ -9,6 +9,7 @@ jobs:
       - name: deploy
         run: echo "this is for deployment"
   job2:
+    needs: job1
     runs-on: ubuntu-latest
     steps:
       - name: build
