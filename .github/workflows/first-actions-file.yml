@@ -7,7 +7,7 @@ jobs:
       - name: test
         run: echo "this is my workflow for testing"
       - name: deploy
-        run: echo "this is for deployment"
+        run: .not echo "this is for deployment"
   job2:
     needs: job1
     runs-on: ubuntu-latest
