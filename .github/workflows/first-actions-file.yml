@@ -8,3 +8,8 @@ jobs:
         run: echo "this is my workflow for testing"
       - name: deploy
         run: echo "this is for deployment"
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build
+        run: sh echo "build the code"
