@@ -1,0 +1,16 @@
+name: My-first-workflow
+on: push
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: echo "this is my workflow for testing"
+      - name: deploy
+        run: echo "this is for deployment"
+  job2:
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: build
+        run: echo "build the code"
