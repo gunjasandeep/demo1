@@ -1,0 +1,10 @@
+name: My-first-workflow
+on: workflow-dispatch
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: echo "this is my workflow for testing"
+      - name: deploy
+        run: echo "this is for deployment"
